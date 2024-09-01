@@ -103,5 +103,9 @@
 ;; remove suspend from C-z
 (global-unset-key (kbd "C-z"))
 
+;; (after! web-mode
+;;   (require 'lsp-mode)
+;;   (add-hook 'web-mode-hook #'lsp))
+
 (provide 'config)
 ;;; config.el ends here

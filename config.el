@@ -95,6 +95,8 @@
 ;; rebind commenting to run comment-line rather than comment-dwim
 (global-set-key (kbd "M-;") #'comment-line)
 
+;; custom keybind for 'make' commands
+
 ;; allow C-c to kill vterm processes (such as dev server)
 (map! :after vterm
       :map vterm-mode-map

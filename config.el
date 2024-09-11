@@ -96,7 +96,7 @@
 (global-set-key (kbd "M-;") #'comment-line)
 
 ;; add keybind for toggling breakpoint
-(global-unset-key (kbd "<f9>"))
+;; (global-unset-key (kbd "<f9>"))
 
 
 ;; doesn't work with svelte
@@ -115,37 +115,37 @@
 (map! "<f9>" #'dap-breakpoint-toggle)
 
 ;; dap mode config from docs
-(map! :after dap-mode
-      :map dap-mode-map
-      ;; :leader
-      ;; :prefix ("d" , "dap")
-      ;; basics
-      :desc "dap next"          "<f10>" #'dap-next
-      :desc "dap step in"       "<f11>" #'dap-step-in
-      :desc "dap step out"      "<f12>" #'dap-step-out
-      :desc "dap continue"      "C-<f5>" #'dap-continue
-      :desc "dap hydra"         "C-S-h" #'dap-hydra
-      :desc "dap debug restart" "M-<f5>" #'dap-debug-restart
-      :desc "dap debug"         "<f5>" #'dap-debug)
+;; (map! :after dap-mode
+;;       :map dap-mode-map
+;;       ;; :leader
+;;       ;; :prefix ("d" , "dap")
+;;       ;; basics
+;;       :desc "dap next"          "<f10>" #'dap-next
+;;       :desc "dap step in"       "<f11>" #'dap-step-in
+;;       :desc "dap step out"      "<f12>" #'dap-step-out
+;;       :desc "dap continue"      "C-<f5>" #'dap-continue
+;;       :desc "dap hydra"         "C-S-h" #'dap-hydra
+;;       :desc "dap debug restart" "M-<f5>" #'dap-debug-restart
+;;       :desc "dap debug"         "<f5>" #'dap-debug)
 
-      ;; debug
-      ;; :prefix ("dd" , "Debug")
-      ;; :desc "dap debug recent"  "r" #'dap-debug-recent
-      ;; :desc "dap debug last"    "l" #'dap-debug-last
+;;       ;; debug
+;;       ;; :prefix ("dd" , "Debug")
+;;       ;; :desc "dap debug recent"  "r" #'dap-debug-recent
+;;       ;; :desc "dap debug last"    "l" #'dap-debug-last
 
-      ;; eval
-      ;; :prefix ("de" , "Eval")
-      ;; :desc "eval"                "e" #'dap-eval
-      ;; :desc "eval region"         "r" #'dap-eval-region
-      ;; :desc "eval thing at point" "s" #'dap-eval-thing-at-point
-      ;; :desc "add expression"      "a" #'dap-ui-expressions-add
-      ;; :desc "remove expression"   "d" #'dap-ui-expressions-remove
+;;       ;; eval
+;;       ;; :prefix ("de" , "Eval")
+;;       ;; :desc "eval"                "e" #'dap-eval
+;;       ;; :desc "eval region"         "r" #'dap-eval-region
+;;       ;; :desc "eval thing at point" "s" #'dap-eval-thing-at-point
+;;       ;; :desc "add expression"      "a" #'dap-ui-expressions-add
+;;       ;; :desc "remove expression"   "d" #'dap-ui-expressions-remove
 
-      ;; :prefix ("db" , "Breakpoint")
-      ;; :desc "dap breakpoint toggle"      "<f9>" #'dap-breakpoint-toggle
-      ;; :desc "dap breakpoint condition"   "c" #'dap-breakpoint-condition
-      ;; :desc "dap breakpoint hit count"   "h" #'dap-breakpoint-hit-condition
-      ;; :desc "dap breakpoint log message" "l" #'dap-breakpoint-log-message)
+;;       ;; :prefix ("db" , "Breakpoint")
+;;       ;; :desc "dap breakpoint toggle"      "<f9>" #'dap-breakpoint-toggle
+;;       ;; :desc "dap breakpoint condition"   "c" #'dap-breakpoint-condition
+;;       ;; :desc "dap breakpoint hit count"   "h" #'dap-breakpoint-hit-condition
+;;       ;; :desc "dap breakpoint log message" "l" #'dap-breakpoint-log-message)
 
 ;; remove suspend from C-z
 (global-unset-key (kbd "C-z"))
